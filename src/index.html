@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Islam Magdi - UI/UX Designer Portfolio</title>
+    <meta name="description" content="Creative UI/UX Designer specializing in user-centered design solutions. View my portfolio of digital experiences and design projects." />
+    <meta name="keywords" content="UI designer, UX designer, portfolio, Islam Magdi, user experience, user interface, design" />
+    <meta name="author" content="Islam Magdi" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://islammagdi.github.io/UIX-Profile/" />
+    <meta property="og:title" content="Islam Magdi - UI/UX Designer Portfolio" />
+    <meta property="og:description" content="Creative UI/UX Designer specializing in user-centered design solutions." />
+    <meta property="og:image" content="https://res.cloudinary.com/dwi30ki0t/image/upload/v1758462644/IMG_20250501_012812_983_fnqe6p.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://islammagdi.github.io/UIX-Profile/" />
+    <meta property="twitter:title" content="Islam Magdi - UI/UX Designer Portfolio" />
+    <meta property="twitter:description" content="Creative UI/UX Designer specializing in user-centered design solutions." />
+    <meta property="twitter:image" content="https://res.cloudinary.com/dwi30ki0t/image/upload/v1758462644/IMG_20250501_012812_983_fnqe6p.webp" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="https://res.cloudinary.com/dwi30ki0t/image/upload/v1758462644/IMG_20250501_012812_983_fnqe6p.webp" />
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dwi30ki0t/image/upload/v1758462644/IMG_20250501_012812_983_fnqe6p.webp" />
+    
+    <!-- Preconnect to external domains for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+    
+    <!-- Load critical CSS -->
+    <style>
+      /* Critical loading styles */
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0f172a 0%, #581c87 50%, #0f172a 100%);
+        min-height: 100vh;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      
+      /* Loading spinner */
+      .loading {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+      }
+      
+      .spinner {
+        width: 40px;
+        height: 40px;
+        border: 4px solid rgba(168, 85, 247, 0.3);
+        border-left: 4px solid #a855f7;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Hide loading when app loads */
+      #root:not(:empty) + .loading {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- Loading fallback -->
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+    
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
